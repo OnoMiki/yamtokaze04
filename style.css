@@ -1,8 +1,8 @@
-@charset "UTF-8"
+
 
 
 body {
-    font-family: 'Noto Serif JP', 'Noto Sans JP', serif, sans-serif;
+    font-family: "Noto Serif JP", "Noto Sans JP", serif, sans-serif;
     color: #111;
 }
 
@@ -27,4 +27,69 @@ body {
     transform: translate(-50%);
     color: #fff;
     font-size: 32px;
+}
+
+.headline-en {
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 500px;
+
+}
+
+.headline-ja {
+    font-size: 26px;
+}
+
+.contents-area{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* news */
+
+.news-contens{
+    display: flex;
+    margin-bottom: 64px;
+}
+.news-contens .section-headline{
+    width: 30%;
+}
+.news-list{
+    display: flex;
+    flex-flow: column;
+    row-gap: 32px;
+    width: 70%;
+}
+
+.news{
+    display: flex;
+    column-gap: 24px;
+    border-bottom: 1px solid #a1a1a1;
+    width: 100%;
+    
+    font-family: "Noto Sans JP";
+}
+.news-date{
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    height: 48px;
+    width: 240px;
+    margin: 0 auto;
+    background-color:#111;
+}
+.btn a{
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-family: Noto Sans JP;
+}
+.btn i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
 }
