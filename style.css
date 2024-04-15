@@ -1,6 +1,9 @@
 
 
-
+/* クリックしたとき画面の移動がスクロールする */
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Noto Serif JP", "Noto Sans JP", serif, sans-serif;
     color: #111;
@@ -51,7 +54,7 @@ body {
 }
 
 .overlay{
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,8 +64,12 @@ body {
     z-index: 1;
 }
 
+.overlay.is-active{
+    display: block;
+}
+
 .drawer {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,6 +78,10 @@ body {
     padding: 44px 50px;
     background-color: #ffffff;
     z-index: 2;
+}
+
+.drawer.is-active{
+    display: block;
 }
 
 .drawer i {
