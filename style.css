@@ -1,5 +1,4 @@
 
-
 /* クリックしたとき画面の移動がスクロールする */
 html{
     scroll-behavior: smooth;
@@ -135,14 +134,16 @@ body {
 }
 
 .headline-ja {
-    font-size: 26px;
+    font-size: 16px;
 }
 
 .contents-area{
     width: 1000px;
     margin: 0 auto;
 }
-
+section{
+    padding: 140px 0;
+}
 /* news */
 
 .news-contens{
@@ -174,8 +175,8 @@ body {
 /* 模写 */
 
 #concept{
-    position: absolute;
-    background: url(./background.jpg);
+    position: relative;
+    background: url(./img/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,7 +196,7 @@ body {
     position: relative;
 }
 
-#concept .section_headline{
+#concept .section-headline{
     margin-bottom: 140px;
 }
 
@@ -218,12 +219,18 @@ body {
 }
 
 #product .contents-area{
+    width: 100%;
+}
+#product .section-headline{
+    
     margin-bottom: 48px;
     text-align: center;
 }
-
 .product-list {
     display: flex;
+    width: 100%;
+}
+.product{
     width: 100%;
 }
 
@@ -237,7 +244,7 @@ body {
     padding-top: 90px;
 }
 
-.footer .contens-area{
+.footer .contents-area{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #A1A1A1;
@@ -249,6 +256,7 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+
 
 .footer-nav ul{
     display: flex;
@@ -270,12 +278,17 @@ body {
     display: flex;
     column-gap: 30px;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .copyright{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 64px;
-    font-family: Noto Sans JP;
+    font-family: "Noto Sans JP";
     font-size: 14px;
 
 }
