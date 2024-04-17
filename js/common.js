@@ -50,13 +50,13 @@ $(function () {
     // })
 
     function openDrawer() {
-        $("#overlay").fadeIn(2000)
-        $("#drawer").fadeIn(2000);
+        $("#overlay").fadeIn(1000)
+        $("#drawer").fadeIn(1000);
     }
 
     function closeDrawer() {
-        $("#drawer").fadeOut(2000)
-        $("#overlay").fadeOut(2000);
+        $("#drawer").fadeOut(500)
+        $("#overlay").fadeOut(500);
 
     }
     //id=openがクリックされたらナビゲーションが開く
@@ -67,12 +67,21 @@ $(function () {
     $("#overlay").on("click", closeDrawer);
     $('.drawer-menu-item').on("click", closeDrawer);
 
-    $(window).fadeThis({
-        speed: 3000,
-        distance: 200
+    $(window).fadeThis();
+
+    
+    // slickの実行
+    $(".experience-list").slick({
+      slidesToShow: 3,   
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
 
-
-
-    })
+})
 
